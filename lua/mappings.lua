@@ -12,6 +12,12 @@ map("n", "<C-u>", "<C-u>zz")
 map("n", "<C-d>", "<C-d>zz")
 map("v", "<", "<gv")
 map("v", ">", ">gv")
+map("n", "<leader>ca", function()
+    vim.lsp.buf.code_action()
+end, { desc = "Code Action" })
+map("n", "<leader>K", function()
+    vim.diagnostic.open_float()
+end, { desc = "Open diagnostic float" })
 
 map("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
     expr = true,
