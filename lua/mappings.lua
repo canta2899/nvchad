@@ -23,6 +23,11 @@ map("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
     expr = true,
     replace_keycodes = false,
 })
+
+ vim.keymap.set({ "n", "t" }, "<C-i>", function()
+     require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
+ end)
+
 vim.g.copilot_no_tab_map = true
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

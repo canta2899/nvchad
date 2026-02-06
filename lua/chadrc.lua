@@ -15,11 +15,21 @@ M.base46 = {
 	-- },
 }
 
+
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
+  --   tabufline = {
+  --      lazyload = false
+  --  }
+  --
 -- }
+
+ M.term = {
+   float = {
+     row = 0.05, col = 0.1,
+     width = 0.8, height = 0.8,
+     border = "single",
+   },
+ }
 
 return M
