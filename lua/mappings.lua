@@ -24,9 +24,10 @@ map("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
     replace_keycodes = false,
 })
 
- vim.keymap.set({ "n", "t" }, "<C-i>", function()
+ map({ "n", "t" }, "<A-t>", function()
      require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
- end)
+ end, { desc = "Toggle floating terminal" })
+
 
 vim.g.copilot_no_tab_map = true
 
