@@ -27,6 +27,10 @@ return {
   	},
   },
   {
+    "nvim-treesitter/nvim-treesitter-context",
+    lazy = false,
+  },
+  {
       "f-person/git-blame.nvim",
       event = "VeryLazy",
       opts = {
